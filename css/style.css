@@ -5,22 +5,18 @@
 }
 
 .h4, h4 {
-    font-size: 29px;
     margin-bottom: 10px;
     color: #007AFF;
     font-family: open sans;
 }
 
 p {
-    font-size: 14px;
-    margin-bottom: 20px;
     font-family: open sans;
     font-weight: 400px;
 }
 
 .footer-section {
     background: #0081FE;
-    min-height: 80vh;
 }
 
 .border-bottom {
@@ -31,10 +27,6 @@ p {
     opacity: 0.3;
 }
 
-i {
-    color: #ffffff;
-}
-
 .border-top {
     color: #ffffff;
     margin-left: 50px;
@@ -42,22 +34,66 @@ i {
     opacity: 0.2;
 }
 
-@media (max-width: 425px) {
-    .first-section h2 {
-        font-size: 24px
-    }
-    
-    
+.footer-img {
+    width: fit-content;
 }
 
-@media (max-width: 768px) {
-    .first-section h2 {
-        font-size: 36px;
+@media (max-width: 426px) {
+    .flip {
+        flex-direction: column-reverse;
+        }
+    .system {
+        display: none;
+    }
+    .fw-bolder {
+        font-size: 24px !important;
+    }
+    .telephone {
+        display: none;
+    } 
+    .last-line {
+        display: none;
+    }
+    p {
+        font-size: 14px;
+    }
+    .h4, h4 {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 1024) {
-    .first-section h2 {
-        font-size: 49px;
+@media (min-width: 768px) {
+    .mobile {
+        display: none !important;
+    }
+    .address {
+        display: none !important;
+    }
+    .line {
+        display: none !important;
+    }
+    .navbar-brand {
+        display: unset !important;
+    }
+    .fw-bolder {
+        font-size: 36px !important;
+    }
+    p {
+        font-size: 16px;
+    }
+    .h4, h4 {
+        font-size: 29px;
+    }
+}
+
+@media (min-width: 992px) {
+    .fw-bolder {
+        font-size: 54px !important;
+    }
+    p {
+        font-size: 18px;
+    }
+    .h4, h4 {
+        font-size: 29px;
     }
 }

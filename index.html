@@ -16,7 +16,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <a class="navbar-brand mx-lg-5" href="#">
+              <a class="navbar-brand mx-lg-5 d-none" href="#">
                 <img src="img/helium logo [Recovered]-01 1.png" alt="logo" width="">
               </a>
             
@@ -45,18 +45,17 @@
     </div>
 
     <div id="first-section" class="py-lg-5">
-        <div class="container">
         <div class="container mx-auto">
-            <div class="left-section">
-                <div class="row">
+                <div class="row flip">
                     <div class="col-lg-6 col-md-6 p-2">
-                        <h2 class="fw-bolder pt-1 mt-2 fs-lg-1 fs-md-3">Power Monitoring
+                        <h2 class="fw-bolder pt-1 mt-2 fs-lg-1 fs-md-3 system">Power Monitoring
                             System</h2>
                         <p class="pb-lg-5 pb-md-3">An M2M solution can introduce new value adding sales propositions, more customer touch points and increased market share - whilst reducing costs through better fix first time rates, reduced support call lengths, and reduced service visits.</p>
                         <a class="btn btn-secondary fw-bold text-center px-5 p-2" style="background: linear-gradient(90deg, #F7D6D7 50%, #ED979A 118.47%); color: #EC1C24;
                         ;" href="#" role="button">Get Started</a>
                     </div>
                     <div class="image-section col-lg-6 col-md-6">
+                      <h2 class="fw-bolder pt-1 mt-2 fs-lg-1 fs-md-3 power d-lg-none d-md-none">Power Monitoring <br> System</h2>
                         <div class="gen">
                             <img src="img/gen.png" class="img-fluid" alt="" width="">
                         </div>
@@ -64,17 +63,13 @@
                 </div>        
             </div>
         </div>
-          </div>
-    </div>
 
     <div id="second-section" class="py-lg-5 py-md-5">
-        <div class="container">
         <div class="container mx-auto">
-            <div class="left-section">
                 <div class="row">
                   <div class="image-section col-lg-6 col-md-6">
                     <div class="gen">
-                        <img src="img/laptop.png" alt="" class="img-fluid" width="">
+                        <img src="img/laptop.png" alt="" class="img-fluid pt-5" width="">
                     </div>
                 </div>  
                     <div class="col-lg-6 col-md-6 p-4 text">
@@ -89,26 +84,44 @@
                 </div>        
             </div>
         </div>
-          </div>
-    </div>
 
-    <div class="footer-section">
-      <div class="container" style="color: #fff;">
-        <div class="border-bottom">
-        </div>
-        <div class="row d-sm-flex">
-          <div class="col-lg-4 col-md-3 col-sm-6">
+    <div class="footer-section pb-4">
+      <div class="container pt-5" style="color: #fff;">
+        <hr>
+        <div class="row d-sm-flex position-relative">
+            <img src="img/helium logo [Recovered]-01 1.png" class="position-absolute footer-img" style="padding-top: 120px; left: 200px;" alt="">
+          <div class="col-lg-6 col-md-6">
             <p class="pt-5">ABOUT US</p>
             <P>CONTACT US</P>
             <P>HELP</P>
             <P>PRIVACY POLICY</P>
             <P>DISCLAIMER</P>
+              <!-- for mobile view -->
+              <div class="d-flex mobile">
+                <i class="bi bi-facebook p-2"></i>
+                <i class="bi bi-twitter p-2"></i>
+                <i class="bi bi-linkedin p-2"></i>
+                <i class="bi bi-youtube p-2"></i>
+                <i class="bi bi-instagram p-2"></i>
+                <i class="bi bi-google p-2"></i>
+                <i class="bi bi-pinterest p-2"></i>
+                <i class="bi bi-rss p-2"></i>
+              </div>
+              <hr class="line">
+              <div class="col-lg-6 col-md-6 address">
+                <div class="d-flex">
+                  <i class="bi bi-geo-alt"></i>
+                  <p class="mx-2">345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+                </div>
+                <div class="d-flex">
+                  <i class="bi bi-telephone"></i>
+                  <p class="mx-2">(123) 456-7890</p>
+                  <i class="bi bi-printer" style="padding-left: 80px;"></i>
+                  <p class="mx-2">(123) 456-7890</p>
+                </div>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6">
-            <img src="img/helium logo [Recovered]-01 1.png" style="padding-top: 120px;" alt="">
-          </div>
-
-        <div class="col-lg-5 col-md-6">
+          <div class="col-lg-6 col-md-6 telephone">
           <div class="d-flex" style="padding-top: 80px;" >
             <i class="bi bi-geo-alt"></i>
             <p class="mx-2">345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
@@ -119,7 +132,7 @@
             <i class="bi bi-printer" style="padding-left: 80px;"></i>
             <p class="mx-2">(123) 456-7890</p>
           </div>
-          <div class="d-flex ">
+          <div class="d-flex">
             <p style="padding-right: 20px;" class="pt-1">Social Media</p>
             <i class="bi bi-facebook mx-lg-2 mx-md-1"></i>
             <i class="bi bi-twitter mx-lg-2 mx-md-1"></i>
@@ -132,12 +145,10 @@
           </div>
         </div>
         </div>
-        <div class="border-top">
-        </div>
+        <hr class="m-0 last-line">
         <p class="text-center">Copyright © 2022 • Kodehauz.</p>
       </div>
     </div>
-
 
     <script src="js/bootstrap.min.js"></script>
 </body>
